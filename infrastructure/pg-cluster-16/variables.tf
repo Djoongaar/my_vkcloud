@@ -12,7 +12,7 @@ variable "name" {
 variable "flavor_id" {
   type        = string
   description = "Compute flavor ID for each cluster node (min 2 vCPU / 8 GB RAM)."
-  default     = "2d9866a9-e955-4986-b00a-340ca54b2cac"
+  default     = "72e08e66-77a8-457f-b86e-6dea452fd301"
 }
 
 variable "cluster_size" {
@@ -72,14 +72,14 @@ variable "postgresql_version" {
 
 variable "network_id" {
   type        = string
-  description = "Network ID the cluster nodes are attached to."
-  default     = "79c13d8d-8307-471c-934b-4552066a9b9d"
+  description = "Network ID the instance is attached to."
+  default     = "ef76ebb7-dfc5-403e-b090-9c00babc58e1"
 }
 
 variable "subnet_id" {
   type        = string
-  description = "Subnet ID inside the network."
-  default     = "5e6319a0-c28e-4171-a39b-d790ec9316ea"
+  description = "Subnet ID inside the network. null lets VKCS choose."
+  default     = "3fd0eac7-1731-4744-9ecc-17042cf8f6cc"
 }
 
 variable "security_group_ids" {

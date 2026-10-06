@@ -58,3 +58,7 @@ terraform init
 Изменение (добавление) `Security Group` в конфигурации terraform приводит к удалению и пересозданию всего инстанса БД.
 Эта известная проблема, решения пока нет, ждем правок багов от разработки.
 
+
+### Terraform apply: Error: error creating vkcs_db_cluster: Internal Server Error
+
+Ошибка может указывать на что угодно. В моем случае был не верно указаны ID сети и подвети в файле `variables.tf`
