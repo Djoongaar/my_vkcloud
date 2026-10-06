@@ -66,6 +66,14 @@ resource "vkcs_db_instance" "this" {
       start_minutes  = backup_schedule.value.start_minutes
     }
   }
+/*
+  capabilities {
+    name = "postgres_extensions"
+    settings = {
+      "hstore" = "true"
+    }
+  }
+*/
 }
 
 resource "vkcs_db_database" "this" {
