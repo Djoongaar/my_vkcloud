@@ -5,7 +5,16 @@
 terraform init
 terraform validate
 terraform plan
+terraform apply
 ```
+
+
+# TODO:
+* Создать тачку `client` под Ubuntu, `postgresql-client-16`
+* Прокинуть туда `ssh` ключи своего макбука
+* Создать там файл `.pgpass` и `.env` для удобного подключения к хостам
+* Создать terraform `MySQL 5.7`
+* Настроить тачку client для коннекта в `MySQL 5.7`
 
 
 # Troubleshooting
